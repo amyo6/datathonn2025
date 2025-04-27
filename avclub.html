@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Scroll Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .block {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .burgundy {
+      background-color: #4c2d81;
+      border: 18px solid black;
+    }
+
+    .black {
+      background-color: #000;
+    }
+
+    .white {
+      background-color: #fff;
+    }
+
+    .content {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .square {
+      width: 400px;
+      height: 400px;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .square h1 {
+      color: #fff;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+
+    .side-rectangle {
+      width: 150px;
+      height: 400px;
+    }
+
+    .orange {
+      background-color: #ebebeb;
+    }
+
+    .yellow {
+      background-color: #127765;
+    }
+
+    footer {
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    .burgundy .content {
+      flex-direction: column;
+    }
+
+    .tagline {
+      margin-top: 20px;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: lighter;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+
+    .report-embed {
+      width: 850px;
+      height: 500px; /* Increased height */
+      border: none;
+      margin-top: 20px;
+    }
+    /* Green banner style */
+    .green-banner {
+      height: 200px;
+      width: 100%;
+      background-color: #127765; /* Green color */
+      padding: 20px 0;
+    }
+
+    .green-banner-text {
+      margin-top: 50px;
+      margin-left: 55px;
+      width: 90%;
+      text-align: center;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: lighter;
+    }
+    /* Burgundy banner style */
+    .burgundy-banner {
+      height: 200px;
+      width: 100%;
+      background-color: #4c2d81; /* Burgundy color */
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .burgundy-banner-text {
+      width: 90%;
+      text-align: center;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: lighter;
+      max-width: 800px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- First special block -->
+<!-- First special block -->
+<section class="block burgundy">
+  <div class="content">
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <div class="side-rectangle orange"></div>
+      <div class="square">
+        <h1>Modecraft</h1>
+      </div>
+      <div class="side-rectangle yellow"></div>
+    </div>
+    <p class="tagline">
+      An in-depth analysis of Modecraft's retail data, uncovering key growth opportunities and forecasting future operational potential.
+    </p>
+  </div>
+</section>
+
+<!-- Green Banner -->
+<section class="green-banner">
+  <div class="green-banner-text">
+    Modecraft is a dominant force in the European retail sector, offering a 
+    wide range of products such as mugs, cabinets, lanterns, and other home goods. 
+    With over half a million items ordered, the company 
+    is poised for even greater success. Our team analyzed the data and developed 
+    visualizations to highlight strategic opportunities that could drive further growth.
+  </div>
+</section>
+
+
+  <!-- Power BI Embed -->
+  <section class="block white">
+    <div class="content">
+      <h3 style="color: black; margin-bottom: 10px; font-weight: 600;"> Major Highlights </h3>
+      <p style="color: black; font-family: 'Outfit', sans-serif; font-size: 16px; max-width: 700px; text-align: center; margin-bottom: 30px;">
+        Through our analysis, we developed a series of visualizations that highlighted Modecraft’s key strengths. 
+        We found that the <b>United Kingdom</b> was the region where they achieved the <b>greatest revenue</b>. 
+        Overall, the company's total revenue <b>remained steady</b> with consistent positive growth. 
+        Additionally, we identified their top-selling items and uncovered valuable insights into customer behavior.
+      </p>
+      <iframe title="Modecraft Ecommerce Analysis Report" width="800" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjZkYTM0MTMtM2Y5NC00YmM3LWFjMzEtNTNkZjA2YmEyZWIzIiwidCI6ImY2YjZkZDViLWYwMmYtNDQxYS05OWEwLTE2MmFjNTA2MGJkMiIsImMiOjZ9&pageName=1a872b0766b01cbeb336" frameborder="0" class="report-embed" allowFullScreen="true"></iframe>
+    </div>
+  </section>
+
+  <!-- Burgundy Banner -->
+<section class="burgundy-banner">
+  <div class="burgundy-banner-text">
+    Based on our analysis, we recommend that Modecraft prioritize expanding its presence in the <b>United Kingdom</b>, invest in developing products with higher revenue potential, and strategically boost sales efforts on Thursdays. Additionally, our team created predictive models and forecasts to support these recommendations, which can be explored <a href="https://docs.google.com/presentation/d/1yDQcFMRH7naa-LOqvFEFqCYHMODQoQ8TQbU729rOLCI/edit?usp=sharing" target="_blank" style="color: inherit; text-decoration: none;"><b>here</b></a>.
+  </div>
+</section>
+
+  <footer>© AV Club | Amy Oguejiofor & Vy Nguyen </footer>
+
+</body>
+</html>
